@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<section class="container">
+ <h2>Introduction to Redis</h2>
+ <h1>Santa's Elves Kanban for Toys</h1>
+ <section class="row">
+   <section class="col-md-4">
+     <img src="/media/images/Nutcracker.png">
+   </section>
+   <section class="col-md-4">
+     <img src="/media/images/teddy-bear.png">
+   </section>
+   <section class="col-md-4">
+
+   </section>
+ </section>
+  <ul>
+  {% for key, value in  info %}
+  <li>{{ key }} {{ value }}</li>
+  {% endfor %}
+  </ul>
+</section>
+{% endblock %}

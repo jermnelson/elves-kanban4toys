@@ -1,0 +1,5 @@
+*.swp
+*.rdb
+*.aof
+redis-server
+node_mod*
